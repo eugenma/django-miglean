@@ -38,7 +38,7 @@ Installation
 
 1. Install from github with :code:`pip` or :code:`pipenv` ::
    
-    $ pip install git+https://github.com/tangentlabs/django-oscar-paypal.git
+    $ pip install git+https://github.com/eugenma/django-miglean.git
 
 
 2. Add into your :code:`settings.py` under ::
