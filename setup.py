@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="django-miglean",
-    version="0.0.1",
+    version="0.0.2",
     url="https://github.com/borntyping/cookiecutter-pypackage-minimal",
 
     author="Eugen Massini",
@@ -20,5 +20,6 @@ setuptools.setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
 )
