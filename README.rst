@@ -23,15 +23,15 @@ Usage
 
 Run as :code:`manage.py` command via::
 
-   (venv)$ python manage.py clean_migrations --dry-run False
+   (venv)$ python manage.py clean_migrations --no-dry-run
 
 or via :code:`pipenv`::
 
-   $ pipenv run python manage.py clean_migrations --dry-run False
+   $ pipenv run python manage.py clean_migrations --no-dry-run
 
-The argument :code:`--dry-run` is optional. Default value is :code:`True`. In this case
+The argument :code:`--no-dry-run` is optional. If the argument is not provided,
 the cleanup is not executed. Instead one see which actions will be executed if
-the flag is :code:`False`.
+the flag would be set.
 
 Installation
 ------------
@@ -53,7 +53,7 @@ Installation
 Requirements
 ^^^^^^^^^^^^
 
-Tested with :code:`Django===1.11`.
+Tested with :code:`Django===1.11`, :code:`Django==3.0`.
 
 
 Authors

@@ -19,8 +19,9 @@ class Command(BaseCommand):
     help = 'Cleans all migration files. Just for testing environments. Do not use in production.'
 
     def add_arguments(self, parser):
-        parser.add_argument('--dry-run', type=bool,
-                            help="Shown what will happen if you run the program with --dry-run=False", default=True)
+        parser.add_argument('--no-dry-run', dest='dry_run', action='store_false', help='The real execution (Default is dry run.)')
+        parser.set_defaults(dry_run=True)
+
 
     def handle(self, *args, **options):
         self.dry_run = options['dry_run']
